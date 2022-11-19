@@ -37,7 +37,6 @@ Only users registered in the system have access to the database. Log in using a 
 - MySQL
 - Maven
 
-# інструкції по запуску проекту(обовʼязково)
 ## :mate: How to start project
 ### First of all try go to the link and try my demo.
 If you can't enter by you login, try to register 
