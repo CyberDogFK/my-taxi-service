@@ -2,6 +2,7 @@ package taxi.service.impl;
 
 import java.util.List;
 import taxi.dao.DriverDao;
+import taxi.exception.AuthenticationException;
 import taxi.lib.Inject;
 import taxi.lib.Service;
 import taxi.model.Driver;
@@ -38,8 +39,8 @@ public class DriverServiceImpl implements DriverService {
     }
 
     @Override
-    public Driver findByLogin(String login) {
+    public Driver findByLogin(String login) throws AuthenticationException {
         return driverDao.findByLogin(login).orElseThrow(() ->
-                new RuntimeException("Can't get driver with login " + login));
+                new AuthenticationException("Can't get driver with login " + login));
     }
 }
