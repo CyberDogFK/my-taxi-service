@@ -13,16 +13,18 @@ This service is written as a web application, to make remote access to the datab
 Thanks to this service, you can control all your cars, and all your drivers and assign their cars to drivers,
 and all this through the browser interface.
 Only users registered in the system have access to the database. Log in using a username and password
+When i create this project for depencency injectoin 
 
 ## :books: Project structure
 
-| Tier        | Description                              |
-|-------------|------------------------------------------|
-| JSP-pages   | Response for UI                          |
-| Filter      | Response for filtering not-logging users |
-| Controllers | Response for controlling HTTP methods    |
-| Services    | Response for processing data             |
-| DAO         | Response for connection with DB          |
+| Tier                | Description                                 |
+|---------------------|---------------------------------------------|
+| JSP-pages           | Responsible for UI                          |
+| Filter              | Responsible for filtering not-logging users |
+| Controllers         | Responsible for controlling HTTP methods    |
+| Services            | Responsible for processing data             |
+| DAO                 | Responsible for connection with DB          |
+| Dependency Injector | Responsible for dependency inversion        |
 
 
 ## :globe_with_meridians: Technologies
@@ -30,11 +32,10 @@ Only users registered in the system have access to the database. Log in using a 
 - JAVA 11
 - Java Servlets
 - JDBC
-- Dependency Injection
 - JSP
-- TomCat
-- MySQL
-- Maven
+- TomCat 9
+- MySQL 8
+- Maven 3
 
 ## :mate: How to start the project
 ### First of all try to go to the link and try my demo.
@@ -62,4 +63,4 @@ And set a username and password to your connection.
 > mvn package
 
 After this, you need to run this on the server.
-You can use tomcat, or every server that you like.
+You can use tomcat, or any server that you like.
